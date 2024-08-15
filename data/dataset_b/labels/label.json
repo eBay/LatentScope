@@ -1,0 +1,1157 @@
+{
+    "1": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "productcatalogservice"
+            }
+        ],
+        "time": 1648485674,
+        "trigger": [
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "2": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "emailservice-0"
+            }
+        ],
+        "time": 1648486942,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "3": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-5"
+            }
+        ],
+        "time": 1648492684,
+        "trigger": [
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-2\", \"kpi\": \"container_cpu_cfs_throttled_seconds\"}",
+            "{\"node\": \"node-5\", \"service\": \"checkoutservice2\", \"pod\": \"checkoutservice2-0\", \"kpi\": \"container_cpu_cfs_throttled_periods\"}"
+        ],
+        "ticket": 97
+    },
+    "4": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "checkoutservice"
+            }
+        ],
+        "time": 1648493254,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "5": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "recommendationservice-1"
+            }
+        ],
+        "time": 1648494346,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "6": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "shippingservice"
+            }
+        ],
+        "time": 1648494478,
+        "trigger": [
+            "{\"service\": \"currencyservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "7": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "emailservice"
+            }
+        ],
+        "time": 1648495526,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "8": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "frontend"
+            }
+        ],
+        "time": 1648496723,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "9": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-5"
+            }
+        ],
+        "time": 1648498057,
+        "trigger": [
+            "{\"node\": \"node-5\", \"service\": \"frontend\", \"pod\": \"frontend-2\", \"kpi\": \"container_fs_reads./dev/vda\"}",
+            "{\"node\": \"node-5\", \"service\": \"frontend\", \"pod\": \"frontend-1\", \"kpi\": \"container_memory_failures.container.pgmajfault\"}",
+            "{\"node\": \"node-5\", \"service\": \"frontend\", \"pod\": \"frontend-1\", \"kpi\": \"container_memory_failures.hierarchy.pgmajfault\"}",
+            "{\"node\": \"node-5\", \"service\": \"frontend\", \"pod\": \"frontend-2\", \"kpi\": \"container_fs_reads_MB./dev/vda\"}",
+            "{\"node\": \"node-5\", \"service\": \"frontend\", \"pod\": \"frontend-1\", \"kpi\": \"container_fs_reads_MB./dev/vda\"}"
+        ],
+        "ticket": 93
+    },
+    "10": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "currencyservice"
+            }
+        ],
+        "time": 1648499545,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "11": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648502365,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "12": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648502839,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "13": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "shippingservice"
+            }
+        ],
+        "time": 1648503787,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "14": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "paymentservice-1"
+            }
+        ],
+        "time": 1648507813,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"adservice\", \"kpi\": \"count\"}",
+            "{\"service\": \"paymentservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "15": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "productcatalogservice-0"
+            }
+        ],
+        "time": 1648516367,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "16": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648516754,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "17": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "productcatalogservice-0"
+            }
+        ],
+        "time": 1648520175,
+        "trigger": [
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "18": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "productcatalogservice"
+            }
+        ],
+        "time": 1648526627,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"paymentservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "19": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "shippingservice-2"
+            }
+        ],
+        "time": 1648528984,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "20": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "recommendationservice"
+            }
+        ],
+        "time": 1648538597,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"currencyservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "21": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "emailservice"
+            }
+        ],
+        "time": 1648545773,
+        "trigger": [
+            "{\"service\": \"cartservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "22": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-6"
+            }
+        ],
+        "time": 1648546166,
+        "trigger": [
+            "{\"node\": \"node-6\", \"service\": \"cartservice\", \"pod\": \"cartservice-2\", \"kpi\": \"container_fs_reads./dev/vda\"}",
+            "{\"node\": \"node-6\", \"service\": \"cartservice\", \"pod\": \"cartservice-2\", \"kpi\": \"container_fs_reads_MB./dev/vda\"}",
+            "{\"node\": \"node-6\", \"service\": \"cartservice\", \"pod\": \"cartservice-1\", \"kpi\": \"container_fs_reads_MB./dev/vda\"}"
+        ],
+        "ticket": 96
+    },
+    "23": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "emailservice-2"
+            }
+        ],
+        "time": 1648549152,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "24": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "recommendationservice-0"
+            }
+        ],
+        "time": 1648552118,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "25": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "emailservice-0"
+            }
+        ],
+        "time": 1648553174,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"cartservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "26": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "currencyservice-1"
+            }
+        ],
+        "time": 1648554031,
+        "trigger": [
+            "{\"service\": \"currencyservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "27": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "emailservice"
+            }
+        ],
+        "time": 1648556607,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "28": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "productcatalogservice"
+            }
+        ],
+        "time": 1648559364,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "29": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "currencyservice"
+            }
+        ],
+        "time": 1648560457,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "30": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648563286,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "31": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "recommendationservice"
+            }
+        ],
+        "time": 1648563840,
+        "trigger": [
+            "{\"service\": \"currencyservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"paymentservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "32": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648566959,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "33": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648572078,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "34": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "recommendationservice"
+            }
+        ],
+        "time": 1648576213,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "35": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648576214,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "36": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "checkoutservice"
+            }
+        ],
+        "time": 1648578617,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "37": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "shippingservice"
+            }
+        ],
+        "time": 1648581520,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "38": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-5"
+            }
+        ],
+        "time": 1648582037,
+        "trigger": [
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-1\", \"kpi\": \"container_fs_reads./dev/vda\"}",
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-0\", \"kpi\": \"container_fs_reads./dev/vda\"}",
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-0\", \"kpi\": \"container_memory_failures.container.pgmajfault\"}",
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-1\", \"kpi\": \"container_memory_failures.container.pgmajfault\"}",
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-0\", \"kpi\": \"container_memory_failures.hierarchy.pgmajfault\"}"
+        ],
+        "ticket": 112
+    },
+    "39": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-5"
+            }
+        ],
+        "time": 1648582394,
+        "trigger": [
+            "{\"node\": \"node-5\", \"service\": \"shippingservice\", \"pod\": \"shippingservice-2\", \"kpi\": \"container_memory_failures.container.pgmajfault\"}",
+            "{\"node\": \"node-5\", \"service\": \"shippingservice\", \"pod\": \"shippingservice-2\", \"kpi\": \"container_memory_failures.hierarchy.pgmajfault\"}",
+            "{\"node\": \"node-5\", \"service\": \"shippingservice\", \"pod\": \"shippingservice-2\", \"kpi\": \"container_fs_reads./dev/vda\"}",
+            "{\"node\": \"node-5\", \"service\": \"shippingservice\", \"pod\": \"shippingservice-2\", \"kpi\": \"container_fs_reads_MB./dev/vda\"}",
+            "{\"node\": \"node-5\", \"service\": \"shippingservice\", \"pod\": \"shippingservice-2\", \"kpi\": \"container_memory_failures.hierarchy.pgfault\"}"
+        ],
+        "ticket": 108
+    },
+    "40": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "paymentservice-1"
+            }
+        ],
+        "time": 1648588279,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "41": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "recommendationservice"
+            }
+        ],
+        "time": 1648589675,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "42": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "recommendationservice-0"
+            }
+        ],
+        "time": 1648592777,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "43": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "productcatalogservice-1"
+            }
+        ],
+        "time": 1648592982,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "44": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-5"
+            }
+        ],
+        "time": 1648593952,
+        "trigger": [
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-1\", \"kpi\": \"container_memory_failures.container.pgmajfault\"}",
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-1\", \"kpi\": \"container_memory_failures.hierarchy.pgmajfault\"}",
+            "{\"node\": \"node-5\", \"service\": \"paymentservice\", \"pod\": \"paymentservice-0\", \"kpi\": \"container_cpu_system_seconds\"}",
+            "{\"node\": \"node-5\", \"service\": \"checkoutservice2\", \"pod\": \"checkoutservice2-0\", \"kpi\": \"container_network_receive_MB.eth0\"}"
+        ],
+        "ticket": 117
+    },
+    "45": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648594936,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "46": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "recommendationservice"
+            }
+        ],
+        "time": 1648598533,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "47": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-6"
+            }
+        ],
+        "time": 1648599214,
+        "trigger": [
+            "{\"node\": \"node-6\", \"service\": \"shippingservice\", \"pod\": \"shippingservice-1\", \"kpi\": \"container_memory_failures.hierarchy.pgfault\"}",
+            "{\"node\": \"node-6\", \"service\": \"shippingservice\", \"pod\": \"shippingservice-1\", \"kpi\": \"container_memory_failures.container.pgfault\"}",
+            "{\"node\": \"node-6\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-1\", \"kpi\": \"container_memory_failures.hierarchy.pgfault\"}"
+        ],
+        "ticket": 110
+    },
+    "48": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "shippingservice"
+            }
+        ],
+        "time": 1648599693,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "49": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "emailservice"
+            }
+        ],
+        "time": 1648603623,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "50": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "recommendationservice-1"
+            }
+        ],
+        "time": 1648611408,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "51": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-5"
+            }
+        ],
+        "time": 1648611541,
+        "trigger": [
+            "{\"node\": \"node-5\", \"service\": \"adservice\", \"pod\": \"adservice-2\", \"kpi\": \"container_fs_reads./dev/vda\"}"
+        ],
+        "ticket": 111
+    },
+    "52": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "cartservice"
+            }
+        ],
+        "time": 1648612646,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"cartservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "53": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "shippingservice"
+            }
+        ],
+        "time": 1648614672,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"cartservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "54": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "checkoutservice"
+            }
+        ],
+        "time": 1648617624,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"count\"}"
+        ]
+    },
+    "55": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "emailservice"
+            }
+        ],
+        "time": 1648620855,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "56": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "productcatalogservice"
+            }
+        ],
+        "time": 1648624973,
+        "trigger": [
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "57": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "currencyservice-0"
+            }
+        ],
+        "time": 1648627686,
+        "trigger": [
+            "{\"service\": \"currencyservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "58": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "recommendationservice-2"
+            }
+        ],
+        "time": 1648634886,
+        "trigger": [
+            "{\"service\": \"paymentservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "59": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "shippingservice"
+            }
+        ],
+        "time": 1648635327,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "60": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "productcatalogservice-2"
+            }
+        ],
+        "time": 1648645564,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"paymentservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "61": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "emailservice"
+            }
+        ],
+        "time": 1648646910,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "62": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-5"
+            }
+        ],
+        "time": 1648648468,
+        "trigger": [
+            "{\"node\": \"node-5\", \"service\": \"cartservice\", \"pod\": \"cartservice-1\", \"kpi\": \"container_cpu_cfs_throttled_seconds\"}",
+            "{\"node\": \"node-5\", \"service\": \"cartservice\", \"pod\": \"cartservice-1\", \"kpi\": \"container_cpu_cfs_throttled_periods\"}"
+        ],
+        "ticket": 114
+    },
+    "63": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "recommendationservice-1"
+            }
+        ],
+        "time": 1648652848,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "64": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648744024,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "65": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "frontend-0"
+            }
+        ],
+        "time": 1648746149,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "66": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648747519,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "67": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "paymentservice-2"
+            }
+        ],
+        "time": 1648748870,
+        "trigger": [
+            "{\"service\": \"paymentservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "68": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "shippingservice-0"
+            }
+        ],
+        "time": 1648755870,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "69": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648757205,
+        "trigger": [
+            "{\"service\": \"currencyservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"paymentservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "70": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "emailservice-2"
+            }
+        ],
+        "time": 1648757271,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "71": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "shippingservice-2"
+            }
+        ],
+        "time": 1648760717,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "72": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-6"
+            }
+        ],
+        "time": 1648768005,
+        "trigger": [
+            "{\"node\": \"node-6\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-0\", \"kpi\": \"container_memory_failures.hierarchy.pgfault\"}",
+            "{\"node\": \"node-6\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-0\", \"kpi\": \"container_memory_failures.container.pgfault\"}",
+            "{\"node\": \"node-6\", \"service\": \"cartservice\", \"pod\": \"cartservice-0\", \"kpi\": \"container_network_receive_MB.eth0\"}",
+            "{\"node\": \"node-6\", \"service\": \"shippingservice2\", \"pod\": \"shippingservice2-0\", \"kpi\": \"container_network_receive_MB.eth0\"}",
+            "{\"node\": \"node-6\", \"service\": \"cartservice\", \"pod\": \"cartservice-2\", \"kpi\": \"container_cpu_cfs_throttled_periods\"}"
+        ],
+        "ticket": 120
+    },
+    "73": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-5"
+            }
+        ],
+        "time": 1648773876,
+        "trigger": [
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-1\", \"kpi\": \"container_fs_reads./dev/vda\"}",
+            "{\"node\": \"node-5\", \"service\": \"productcatalogservice\", \"pod\": \"productcatalogservice-1\", \"kpi\": \"container_fs_reads_MB./dev/vda\"}"
+        ],
+        "ticket": 126
+    },
+    "74": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "productcatalogservice"
+            }
+        ],
+        "time": 1648779839,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"currencyservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"adservice\", \"kpi\": \"sr\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "75": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "paymentservice"
+            }
+        ],
+        "time": 1648779950,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "76": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "emailservice"
+            }
+        ],
+        "time": 1648780699,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "77": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "recommendationservice"
+            }
+        ],
+        "time": 1648782177,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "78": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "recommendationservice-1"
+            }
+        ],
+        "time": 1648782704,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "79": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "adservice-0"
+            }
+        ],
+        "time": 1648787863,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "80": {
+        "rc": [
+            {
+                "type": "host",
+                "key": "node-5"
+            }
+        ],
+        "time": 1648791608,
+        "trigger": [
+            "{\"node\": \"node-5\", \"service\": \"recommendationservice\", \"pod\": \"recommendationservice-1\", \"kpi\": \"container_memory_cache\"}",
+            "{\"node\": \"node-5\", \"service\": \"emailservice\", \"pod\": \"emailservice-0\", \"kpi\": \"container_memory_cache\"}",
+            "{\"node\": \"node-5\", \"service\": \"emailservice\", \"pod\": \"emailservice-1\", \"kpi\": \"container_memory_cache\"}",
+            "{\"node\": \"node-5\", \"service\": \"recommendationservice\", \"pod\": \"recommendationservice-0\", \"kpi\": \"container_memory_cache\"}",
+            "{\"node\": \"node-5\", \"service\": \"emailservice2\", \"pod\": \"emailservice2-0\", \"kpi\": \"container_memory_cache\"}"
+        ],
+        "ticket": 127
+    },
+    "81": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648802490,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "82": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "recommendationservice"
+            }
+        ],
+        "time": 1648810214,
+        "trigger": [
+            "{\"service\": \"recommendationservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "83": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "emailservice"
+            }
+        ],
+        "time": 1648811142,
+        "trigger": [
+            "{\"service\": \"emailservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "84": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "adservice"
+            }
+        ],
+        "time": 1648813462,
+        "trigger": [
+            "{\"service\": \"adservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "85": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "checkoutservice"
+            }
+        ],
+        "time": 1648816053,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "86": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "recommendationservice"
+            }
+        ],
+        "time": 1648817073,
+        "trigger": [
+            "{\"service\": \"productcatalogservice\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "87": {
+        "rc": [
+            {
+                "type": "service",
+                "key": "cartservice"
+            }
+        ],
+        "time": 1648826906,
+        "trigger": [
+            "{\"service\": \"shippingservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"cartservice\", \"kpi\": \"mrt\"}",
+            "{\"service\": \"frontend\", \"kpi\": \"mrt\"}"
+        ]
+    },
+    "88": {
+        "rc": [
+            {
+                "type": "pod",
+                "key": "shippingservice-0"
+            }
+        ],
+        "time": 1648826999,
+        "trigger": [
+            "{\"service\": \"checkoutservice\", \"kpi\": \"mrt\"}"
+        ]
+    }
+}
