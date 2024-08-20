@@ -4,7 +4,6 @@ import os
 from loguru import logger
 from models import CaseMetric, RootCause, RCC
 import click
-from tqdm import tqdm
 from typing import *
 
 

@@ -1,8 +1,6 @@
 import json
 import multiprocessing as mp
-import os
 
-from tqdm import tqdm
 from loguru import logger
 from graph.graph_builder import StructuralGraphBuilder
 from graph.graph_filter import GraphFilter, PearsonGraphFilter
