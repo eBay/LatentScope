@@ -1,9 +1,8 @@
-import numpy as np
-import json
 import os
+import json
+import numpy as np
 from loguru import logger
 from models import CaseMetric, RootCause, RCC
-import click
 from typing import *
 
 

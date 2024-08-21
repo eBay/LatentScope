@@ -9,4 +9,3 @@ scikit-learn
 click
 PyYAML
 networkx
-graphviz

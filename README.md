@@ -1,5 +1,5 @@
 # LatentScope
-Source Code and Dataset B for KDD 24 Paper "Microservice Root Cause Analysis With Limited Observability Through Intervention Recognition in the Latent Space".
+Source Code and Dataset B for KDD 24 Paper "[Microservice Root Cause Analysis With Limited Observability Through Intervention Recognition in the Latent Space](https://netman.aiops.org/wp-content/uploads/2024/07/LatentScope_CameraReady_final.pdf)".
 
 ## Installation
 - Download the repo (Dataset B included).
