@@ -145,7 +145,7 @@ def dump_csv(filename: str, data: Sequence[Sequence], headers: Sequence[str] = N
     Dump data into a csv file
     """
     with open(filename, "w", encoding=ENCODING, newline="") as obj:
-        writer = csv.writer(obj)
+        writer = csv.writer(obj, quoting=csv.QUOTE_ALL)
         if headers is not None:
             writer.writerow(headers)
         writer.writerows(data)
