@@ -3,7 +3,7 @@ Source Code and Dataset B for KDD 24 Paper "[Microservice Root Cause Analysis Wi
 
 ## Installation
 - Download the repo (Dataset B included).
-- Install the dependencies in `requirements.txt` with `Python >= 3.8, < 3.11`
+- Install the dependencies in `requirements.txt` with `Python >= 3.9, < 3.11`
 
 ## Usage
 
